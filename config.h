@@ -41,12 +41,6 @@ along with this program.  If not, see <http://www.gnu.org/licenses/>.
 #define MATRIX_EXPANDER_COL_PINS {0, 1, 2, 3, 4, 5}
     #define MATRIX_EXPANDER_ROW_PINS {0, 1, 2, 3, 4, 5}
 
-#define MOUSEKEY_INTERVAL     20
-#define MOUSEKEY_DELAY        0
-#define MOUSEKEY_TIME_TO_MAX  60
-#define MOUSEKEY_MAX_SPEED    7
-#define MOUSEKEY_WHEEL_DELAY  0
-
 #define TAPPING_TOGGLE  1
 
 #define TAPPING_TERM    200
