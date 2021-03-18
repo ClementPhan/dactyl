@@ -34,23 +34,23 @@ const uint16_t PROGMEM keymaps[][MATRIX_ROWS][MATRIX_COLS] = {
  */
 [BASE] = LAYOUT_dactyl(  // layer 0 : default
         // left hand
-          KC_GRV,     KC_1,    KC_2,    KC_3,    KC_4,    KC_5,
-          KC_TAB,     KC_Q,    KC_W,    KC_E,    KC_R,    KC_T,
-          KC_CAPS,    KC_A,    KC_S,    KC_D,    KC_F,    KC_G,
-          KC_LSFT,    KC_Z,    KC_X,    KC_C,    KC_V,    KC_B,
-          KC_LCTL, KC_SLSH, KC_LGUI, KC_LALT,  KC_ESC,
-                                                                  LCTL(KC_C),      MO(1),
-                                                                              LCTL(KC_V),
-                                                             KC_APP, KC_BSPC,     KC_DEL,
+          KC_GRV,      KC_1,     KC_2,     KC_3,    KC_4,  KC_5,
+          KC_TAB,      KC_Q,     KC_W,     KC_E,    KC_R,  KC_T,
+          KC_CAPS,     KC_A,     KC_S,     KC_D,    KC_F,  KC_G,
+          KC_LSFT,     KC_Z,     KC_X,     KC_C,    KC_V,  KC_B,
+          KC_LCTL,  KC_SLSH,  KC_LGUI,  KC_LALT,  KC_ESC,
+                                                                  LCTL(KC_C),    MO(SYMB),
+                                                                               LCTL(KC_V),
+                                                             KC_APP, KC_BSPC,      KC_DEL,
         // right hand
-                             KC_6,    KC_7,       KC_8,     KC_9,    KC_0, KC_MINS,
-                             KC_Y,    KC_U,       KC_I,     KC_O,    KC_P, KC_LBRC,
-                             KC_H,    KC_J,       KC_K,     KC_L, KC_SCLN, KC_QUOT,
-                             KC_N,    KC_M,    KC_COMM,   KC_DOT, KC_RBRC, KC_RSFT,
-                                      KC_LEFT,   KC_UP,  KC_RGHT, KC_DOWN, KC_NONUS_HASH,
-          MO(2),   KC_PGUP,
-          KC_PSCR,
-          KC_ENT,  KC_SPC,  KC_PGDN
+                             KC_6,     KC_7,     KC_8,     KC_9,     KC_0,        KC_MINS,
+                             KC_Y,     KC_U,     KC_I,     KC_O,     KC_P,        KC_LBRC,
+                             KC_H,     KC_J,     KC_K,     KC_L,  KC_SCLN,        KC_QUOT,
+                             KC_N,     KC_M,  KC_COMM,   KC_DOT,  KC_RBRC,        KC_RSFT,
+                                    KC_LEFT,    KC_UP,  KC_RGHT,  KC_DOWN,  KC_NONUS_HASH,
+          MO(MDIA),  KC_PGUP,
+           KC_PSCR,
+            KC_ENT,   KC_SPC,  KC_PGDN
     ),
 /* Keymap 1: Symbol Layer
  *
@@ -76,23 +76,23 @@ const uint16_t PROGMEM keymaps[][MATRIX_ROWS][MATRIX_COLS] = {
 // SYMBOLS
 [SYMB] = LAYOUT_dactyl(
        // left hand
-       KC_TRNS,       KC_TRNS,        KC_TRNS,        KC_TRNS,       KC_TRNS,        KC_TRNS,
-       KC_TRNS,    ALGR(KC_6),     ALGR(KC_7),     ALGR(KC_8),  LSFT(KC_EQL),        KC_TRNS,
-       KC_TRNS,        KC_EQL,  ALGR(KC_LBRC),  ALGR(KC_QUOT),    LSFT(KC_8),        KC_NUBS,
-       KC_TRNS,  ALGR(KC_EQL),  ALGR(KC_RBRC),  ALGR(KC_NUHS),    LSFT(KC_9),  LSFT(KC_NUBS),
-       KC_TRNS,       KC_TRNS,        KC_TRNS,        KC_TRNS,       KC_TRNS,
-                                                                                           KC_TRNS,  KC_TRNS,
-                                                                                                     KC_TRNS,
-                                                                                 KC_TRNS,  KC_TRNS,  KC_TRNS,
+       _______,       _______,        _______,        _______,       _______,        _______,
+       _______,    ALGR(KC_6),     ALGR(KC_7),     ALGR(KC_8),  LSFT(KC_EQL),        _______,
+       _______,        KC_EQL,  ALGR(KC_LBRC),  ALGR(KC_QUOT),    LSFT(KC_8),        KC_NUBS,
+       _______,  ALGR(KC_EQL),  ALGR(KC_RBRC),  ALGR(KC_NUHS),    LSFT(KC_9),  LSFT(KC_NUBS),
+       _______,       _______,        _______,        _______,       _______,
+                                                                                           _______,  _______,
+                                                                                                     _______,
+                                                                                 _______,  _______,  _______,
        // right hand   
-                KC_TRNS,    KC_P7,    KC_P8,    KC_P9,  KC_PSLS,  KC_TRNS,
-                KC_TRNS,    KC_P4,    KC_P5,    KC_P6,  KC_PAST,  KC_TRNS,
-                KC_TRNS,    KC_P1,    KC_P2,    KC_P3,  KC_PMNS,  KC_TRNS,
-                KC_TRNS,    KC_P0,  KC_PDOT,  KC_PENT,  KC_PPLS,  KC_TRNS,
-                          KC_TRNS,  KC_TRNS,  KC_TRNS,  KC_TRNS,  KC_TRNS,
-      KC_TRNS,  KC_TRNS,
-      KC_TRNS,
-      KC_TRNS,  KC_TRNS,  KC_TRNS
+                _______,    KC_P7,    KC_P8,    KC_P9,  KC_PSLS,  _______,
+                _______,    KC_P4,    KC_P5,    KC_P6,  KC_PAST,  _______,
+                _______,    KC_P1,    KC_P2,    KC_P3,  KC_PMNS,  _______,
+                _______,    KC_P0,  KC_PDOT,  KC_PENT,  KC_PPLS,  _______,
+                          _______,  _______,  _______,  _______,  _______,
+      _______,  _______,
+      _______,
+      _______,  _______,  _______
 ),
 /* Keymap 2: Media and mouse keys
  * ,-----------------------------------------.                    ,-----------------------------------------.
@@ -117,23 +117,23 @@ const uint16_t PROGMEM keymaps[][MATRIX_ROWS][MATRIX_COLS] = {
  */
 // MEDIA AND MOUSE
 [MDIA] = LAYOUT_dactyl(
-       KC_TRNS,        KC_TRNS,     KC_MUTE,     KC_VOLD,     KC_VOLU,  KC_TRNS,
-       KC_TRNS,        KC_TRNS,     KC_TRNS,  ALGR(KC_E),     KC_TRNS,  KC_TRNS,
-       KC_TRNS,  ALGR(KC_NUBS),  ALGR(KC_1),  ALGR(KC_2),  ALGR(KC_3),  KC_PGUP,
-       KC_TRNS,        KC_TRNS,      KC_INS,     KC_HOME,      KC_END,  KC_PGDN,
-       KC_TRNS,        KC_TRNS,     KC_TRNS,     KC_TRNS,     KC_TRNS,
-                                                         KC_TRNS,  KC_TRNS,
-                                                                   KC_TRNS,
-                                               KC_TRNS,  KC_TRNS,  KC_TRNS,
+       _______,        _______,     KC_MUTE,     KC_VOLD,     KC_VOLU,  _______,
+       _______,        _______,     _______,  ALGR(KC_E),     _______,  _______,
+       _______,  ALGR(KC_NUBS),  ALGR(KC_1),  ALGR(KC_2),  ALGR(KC_3),  KC_PGUP,
+       _______,        _______,      KC_INS,     KC_HOME,      KC_END,  KC_PGDN,
+       _______,        _______,     _______,     _______,     _______,
+                                                         _______,  _______,
+                                                                   _______,
+                                               _______,  _______,  _______,
     // right hand
-                KC_TRNS,  KC_TRNS,  KC_TRNS,  KC_TRNS,  KC_TRNS,  KC_TRNS,
-                KC_TRNS,    KC_F9,   KC_F10,   KC_F11,   KC_F12,  KC_TRNS,
-                KC_TRNS,    KC_F5,    KC_F6,    KC_F7,    KC_F8,  KC_TRNS,
-                KC_TRNS,    KC_F1,    KC_F2,    KC_F3,    KC_F4,  KC_TRNS,
-                          KC_TRNS,  KC_TRNS,  KC_TRNS,  KC_TRNS,  KC_TRNS,
-      KC_TRNS,  KC_TRNS,
-      KC_TRNS,
-      KC_TRNS,  KC_TRNS,  KC_WBAK
+                _______,  _______,  _______,  _______,  _______,  _______,
+                _______,    KC_F9,   KC_F10,   KC_F11,   KC_F12,  _______,
+                _______,    KC_F5,    KC_F6,    KC_F7,    KC_F8,  _______,
+                _______,    KC_F1,    KC_F2,    KC_F3,    KC_F4,  _______,
+                          _______,  _______,  _______,  _______,  _______,
+      _______,  _______,
+      _______,
+      _______,  _______,  KC_WBAK
 ),
 };
 
